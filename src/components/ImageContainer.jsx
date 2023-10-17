@@ -11,24 +11,24 @@ const ImageContainer = ({ imageSrc, name,height,gender,birth_year }) => {
     <Grid justifyContent="center">
       <Box maxWidth={350} margin={2}>
         <img src={imageSrc} style={{ width: "100%", borderRadius: "8px 8px 0 0" }} />
-        <Typography variant="h6" component="div">
+        <Typography variant="h4" component="div" mb="15px">
           {name}
         </Typography>
         <Box display="flex" justifyContent="flex-start">
           <Height/>
-          <Typography variant="b2" component="div" color="gray" ml="15px">
-            {height}
+          <Typography variant="b2" component="div" color="gray" ml="15px"  mb="15px">
+            {height} cm
           </Typography>
         </Box>
         <Box display="flex" justifyContent="flex-start">
         <Wc/>
-        <Typography variant="b2" component="div" color="gray" ml="15px">
+        <Typography variant="b2" component="div" color="gray" ml="15px" mb="15px">
           {gender}
         </Typography>
         </Box>
         <Box display="flex" justifyContent="flex-start">
         <CalendarMonth/>
-        <Typography variant="b2" component="div" color="gray" ml="15px">
+        <Typography variant="b2" component="div" color="gray" ml="15px" mb="15px">
           {birth_year}
         </Typography>
         </Box>

@@ -149,12 +149,14 @@ const Characters = () => {
         sx={{
           backgroundImage: "none",
           borderRadius: "0.5rem",
+          display:"grid",
+          alignContent:"space-between"
+
         }}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} gutterBottom>
           </Typography>
           <ImageContainer imageSrc={image} name={name} height={height} gender={gender} birth_year={birth_year}/>
-          
         </CardContent>
         <CardActions>
           <Button variant="primary" size="small" onClick={() => setIsExpanded(!isExpanded)}>
@@ -167,11 +169,9 @@ const Characters = () => {
           <Typography variant="body2">Weight: {mass} kg</Typography>
           <Typography variant="body2">Hair: {hair_color}</Typography>
           <Typography variant="body2">Eye Color: {eye_color}</Typography>
-          <Typography variant="body2">Homeworld: {homeworld}</Typography>
-          <Typography variant="body2">Skin: {hair_color}</Typography>
           </Box>
         </Collapse>
-        <Navbar/>
+<Navbar/>
       </Card>
     );
   };
